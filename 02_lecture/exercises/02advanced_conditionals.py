@@ -17,7 +17,15 @@ Examples:
 
 """
 # Write your solution here
+n1=int(input("Please type in the first number: "))
+n2=int(input("Please type in the second number: "))
 
+if n1 < n2:
+    print(f"The greater number was: {n2}")
+elif n1 > n2:
+    print(f"The greater number was: {n1}")
+elif n1 == n2:
+    print(f"The numbers are equal!")
 """
 Python comparison operators can also be used on strings. 
 String a is smaller than string b if it comes alphabetically before b. Notice however that the comparison is only reliable if
@@ -43,7 +51,14 @@ You gave the same word twice.
 
 """
 # Write your solution here
-
+w1=str(input("Please type in the first word: "))
+w2=str(input("Please type in the second word: "))
+if w1 < w2:
+    print(f"{w1} comes alphabetically first.")
+elif w1 > w2:
+    print(f"{w2} comes alphabetically first.")
+elif w1==w2:
+    print(f"You gave the same word twice.")
 """
 Write a program which asks for the user's name. 
 If the name is Huey, Dewey or Louie, the program should recognise the user as one of Donald Duck's nephews.
@@ -60,7 +75,13 @@ Examples:
     You're not a nephew of any character I know of.
 """
 # Write your solution here
-
+username=str(input("Please type in your user's name: "))
+if username == "Huey" or username == "Dewey" or username == "Louie":
+    print(f"I think you might be one of Donald Duck's nephews.")
+elif username == "Morty" or username == "Ferdie":
+    print(f"I think you might be one of Mickey Mouse's nephews.")
+else:
+    print(f"You're not a nephew of any character I know of.")
 """
 FizzBuzz
 Write a program which asks the user for an integer number. 
@@ -81,8 +102,15 @@ Examples:
     FizzBuzz
 """
 # Write your solution here
-
-
+num=int(input("Please type in an integer number: "))
+if num%3==0 and num%5==0:
+    print(f"Fizzbuzz.")
+elif num%5==0:
+    print(f"Buzz.")
+elif num%3==0:
+    print(f"Fizz.")
+else:
+    print("This integer number is neither divisible by three nor five.")
 """
 LeapYear
 Generally, any year that is divisible by four is a leap year. 
@@ -101,4 +129,5 @@ Examples:
     That year is not a leap year.
 """
 # Write your solution here
+year=int(input("Please type in a year: "))
 

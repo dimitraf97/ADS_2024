@@ -6,8 +6,8 @@ Example:
     7 times 5 is 35
 """
 # Write your solution here
-
-
+number = int(input(f"Please type in a number: "))
+print (f"{number} times 5 is: {number*5}.")
 """
 Write a program which asks the user for their name and year of birth. 
 The program then prints out a message as follows:
@@ -16,7 +16,9 @@ The program then prints out a message as follows:
     Hi Frances Fictitious, you will be 34 years old at the end of the year 2024
 """
 # Write your solution here
-
+name= input("What is your name?")
+age= int(input("Which year were you born?"))
+print(f"Hi {name}, you will be {2024-age} years old at the end of the year 2024.")
 """
 Write a program which asks the user for a number of days. 
 The program then prints out the number of seconds in the amount of days given.
@@ -25,7 +27,8 @@ Example:
     Seconds in that many days: >> 604800
 """
 # Write your solution here
-
+days= int(input("Write a number of days:"))
+print (f"Seconds in that many days: {days*86.400}")
 
 """
 This program asks the user for three numbers. 
@@ -34,11 +37,11 @@ There is, however, something wrong with the program - it doesn't work quite righ
 Please fix it.
 """
 # Fix the code
-number = int(input("Please type in the first number: "))
-number = int(input("Please type in the second number: "))
-number = int(input("Please type in the third number: "))
+number1 = int(input("Please type in the first number: "))
+number2 = int(input("Please type in the second number: "))
+number3 = int(input("Please type in the third number: "))
 
-product = number * number * number
+product = number1 * number2 * number3
 
 print("The product is", product)
 
@@ -54,8 +57,12 @@ Example:
     The sum of the numbers is 16 and the mean is 4.0
 """
 # Write your solution here
-
-
+number1 = int(input("Please type in the first number: "))
+number2 = int(input("Please type in the second number: "))
+number3 = int(input("Please type in the third number: "))
+number4 = int(input("Please type in the fourth number: "))
+sum = number1 + number2 + number3 + number4
+print(f"The sum of the numbers is {sum}.")
 """
 Write a program that asks the user for a three-digit number input.
 Reverse the given number by using modulo and division operator.
@@ -64,3 +71,5 @@ Example:
     The reversed number is: >> 321
 """
 # Write your solution here
+number=int(input("Please enter a three-digit number:"))
+print(str(number)[::-1])

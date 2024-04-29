@@ -11,7 +11,13 @@ Example:
     The number 17 is odd.
 """
 # Write your solution here
-
+number=int(input("Please type in a number:"))
+even = number % 2 == 0
+odd = number % 2 != 0
+if number%2 ==0:
+    print(f"The number {number} is even.")
+else:
+    print(f"The number {number} is odd.")
 
 """
 Write a program that asks the user for their exam grade (as a percentage). 
@@ -27,7 +33,13 @@ Example:
     You passed the exam!
 """
 # Write your solution here
-
+grade=int(input("Please type in your grade as a percentage:"))
+if grade >=90:
+    print(f"You are excellent!")
+elif grade >=60:
+    print(f"You passed the exam!")
+elif grade <60:
+    print(f"Unfortunately, you failed the exam.")
 
 """
 Write a program that simulates a simple lunch ordering system. 
@@ -49,3 +61,21 @@ Example:
     Your order: Salad with ranch dressing
 """
 # Write your solution here
+def lunch_ordering_system():
+    print("Welcome to the lunch ordering system!")
+order=str(input("Would you like a sandwich, salad, or wrap?"))
+
+if order == "sandwich":
+    answer=str(input("Would you like it with beef, chicken or veggie?"))
+    print(f"Your order: {order} with {answer}")
+elif order == "salad":
+    answer=str(input("What kind of dressing would you like: vinaigrette, ranch, or caesar?"))
+    print(f"Your order: {order} with {answer}")
+elif order == "wrap":
+    toasted=str(input("Do you want it toasted?"))
+    if toasted == "yes":
+            print (f"You want your wrap toasted.")
+    elif toasted == "no":
+            print (f"You don't want your wrap toasted.")
+else:
+    print("Invalid choice. Please select a sandwich, salad, or wrap.")

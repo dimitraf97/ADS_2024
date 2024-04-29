@@ -28,8 +28,8 @@ Quotation marks are used to signify strings.
 In the context of programming, strings are sequences of characters.
 Thus, the following two commands produce two quite different results:
 """
-# print(2 + 2 * 10)
-# print("2 + 2 * 10")
+#print(2 + 2 * 10)
+#print("2 + 2 * 10")
 
 """
 Thus far, you have probably used double quotation marks " to print out strings. 
